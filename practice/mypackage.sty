@@ -1,0 +1,20 @@
+% this is my first package
+% - starting out with this example from
+% http://tex.stackexchange.com/questions/8750/make-your-own-sty-files
+%
+%% This program can be redistributed and/or modified under the terms
+%% of the LaTeX Project Public License Distributed from CTAN archives
+%% in directory macros/latex/base/lppl.txt.
+% 
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{mypackage}
+  [2011/01/11 v0.01 LaTeX package for my own purpose]
+
+%\RequirePackage{whateverwe need}
+\def\hi{Hello, this is my own package}
+\let\myDate\date
+\newcommand\GoodBye[1][\bfseries]{{Goodbye #1}}
+
+\endinput
+%%
+%% End of file `mypackage.sty'.

@@ -1,0 +1,40 @@
+\documentclass[11pt]{amsart}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{mypackage}
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\include{preamble}
+
+\title{Test of ``mypackage"}
+\author{Timothy Williams}
+%\date{}			    % Activate to display a given date or no date
+\myDate{6 September 2015}             % Activate to display a given date or no date
+
+\def\tbs{\textbackslash}
+\begin{document}
+\maketitle
+
+\section{Testing}
+This is to test the commands provided by ``mypackage.sty".
+
+\tbs{}myDate\{\} is the same as \tbs{}date\{\}.\\
+
+\tbs{}hi gives:
+
+\hi\\
+
+\tbs{}GoodBye\{you\} gives:
+
+\GoodBye{you}.
+
+%\bibliographystyle{plain}
+%\bibliography{master}
+
+\end{document}  
